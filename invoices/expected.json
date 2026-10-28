@@ -1,0 +1,122 @@
+{
+  "01-northwind-office.pdf": {
+    "scenario": "Complete and correct.",
+    "fields": {
+      "supplier_name": "Northwind Office Supplies",
+      "invoice_number": "INV-1001",
+      "invoice_date": "2026-09-15",
+      "subtotal": "279.80",
+      "tax": "27.98",
+      "total": "307.78",
+      "currency": "AUD"
+    },
+    "status": "accepted",
+    "reasons": []
+  },
+  "02-bluegum-consulting.pdf": {
+    "scenario": "Complete and correct, date written out in words.",
+    "fields": {
+      "supplier_name": "Bluegum Consulting",
+      "invoice_number": "BGC-2026-044",
+      "invoice_date": "2026-09-22",
+      "subtotal": "2830.00",
+      "tax": "283.00",
+      "total": "3113.00",
+      "currency": "AUD"
+    },
+    "status": "accepted",
+    "reasons": []
+  },
+  "03-harbour-print.pdf": {
+    "scenario": "Invoice number missing.",
+    "fields": {
+      "supplier_name": "Harbour Print Co",
+      "invoice_number": null,
+      "invoice_date": "2026-10-01",
+      "subtotal": "210.00",
+      "tax": "21.00",
+      "total": "231.00",
+      "currency": "AUD"
+    },
+    "status": "needs_review",
+    "reasons": [
+      "Missing invoice_number"
+    ]
+  },
+  "04-kestrel-it.pdf": {
+    "scenario": "Total is $10.00 more than subtotal + tax.",
+    "fields": {
+      "supplier_name": "Kestrel IT Services",
+      "invoice_number": "K-5521",
+      "invoice_date": "2026-10-03",
+      "subtotal": "810.00",
+      "tax": "81.00",
+      "total": "901.00",
+      "currency": "AUD"
+    },
+    "status": "needs_review",
+    "reasons": [
+      "subtotal + tax does not equal total (off by 10.00)"
+    ]
+  },
+  "05-coastal-catering.pdf": {
+    "scenario": "Total is 1 cent off from rounding, within tolerance.",
+    "fields": {
+      "supplier_name": "Coastal Catering Co",
+      "invoice_number": "CC-0392",
+      "invoice_date": "2026-10-06",
+      "subtotal": "355.15",
+      "tax": "35.52",
+      "total": "390.68",
+      "currency": "AUD"
+    },
+    "status": "accepted",
+    "reasons": []
+  },
+  "06-summit-freight.pdf": {
+    "scenario": "Currency not stated, only a $ sign.",
+    "fields": {
+      "supplier_name": "Summit Freight",
+      "invoice_number": "SF-88013",
+      "invoice_date": "2026-10-07",
+      "subtotal": "799.20",
+      "tax": "79.92",
+      "total": "879.12",
+      "currency": null
+    },
+    "status": "needs_review",
+    "reasons": [
+      "Missing currency"
+    ]
+  },
+  "07-tui-timber.pdf": {
+    "scenario": "New Zealand supplier: NZD, 15% GST, ISO date.",
+    "fields": {
+      "supplier_name": "Tui Timber Ltd",
+      "invoice_number": "TT-30417",
+      "invoice_date": "2026-10-09",
+      "subtotal": "863.00",
+      "tax": "129.45",
+      "total": "992.45",
+      "currency": "NZD"
+    },
+    "status": "accepted",
+    "reasons": []
+  },
+  "08-corner-cafe.pdf": {
+    "scenario": "Receipt with GST-inclusive prices; no subtotal printed.",
+    "fields": {
+      "supplier_name": "Corner Cafe",
+      "invoice_number": "R-0472",
+      "invoice_date": "2026-10-12",
+      "subtotal": null,
+      "tax": "3.25",
+      "total": "35.80",
+      "currency": "AUD"
+    },
+    "status": "needs_review",
+    "reasons": [
+      "Missing subtotal"
+    ]
+  }
+}
