@@ -1,0 +1,14 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local configuration and secrets - never commit
+.env
+
+# Pipeline results (regenerate by running the pipeline)
+output/
+
+# macOS
+.DS_Store
